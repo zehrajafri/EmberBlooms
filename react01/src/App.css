@@ -82,6 +82,7 @@ body {
 
 /* HERO */
 .hero {
+  margin-top: 50px;
   width: 100%;
   background: linear-gradient(rgba(75, 56, 50, 0.6), rgba(75, 56, 50, 0.6)),
     url("https://images.unsplash.com/photo-1509042239860-f550ce710b93");
@@ -402,5 +403,123 @@ section h2 {
   to {
     opacity: 1;
     transform: translateY(0);
+  }
+}/* =========================
+   MOBILE RESPONSIVE (≤768px)
+   ========================= */
+@media (max-width: 768px) {
+
+  /* NAVBAR */
+  .navbar {
+    padding: 12px 20px;
+  }
+
+  .nav-links {
+    gap: 15px;
+    font-size: 14px;
+  }
+
+  .logo {
+    font-size: 18px;
+  }
+
+  /* HERO */
+  .hero {
+    padding: 70px 15px;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  /* SECTIONS */
+  .menu-section,
+  .about,
+  .contact,
+  .special {
+    padding: 40px 15px;
+  }
+
+  section h2 {
+    font-size: 1.6rem;
+  }
+
+  .menu-section h3 {
+    font-size: 1.2rem;
+  }
+
+  /* GRID */
+  .menu-grid {
+    grid-template-columns: 1fr; /* single column */
+  }
+
+  /* CARD */
+  .card {
+    padding: 15px;
+  }
+
+  /* CART PANEL (make it full width on mobile) */
+  .cart-panel {
+    right: 10px;
+    left: 10px;
+    width: auto;
+    top: 75px;
+  }
+
+  /* CART ITEM */
+  .cart-item {
+    font-size: 13px;
+  }
+
+  /* BUTTONS */
+  .card button,
+  .checkout-btn {
+    width: 100%;
+  }
+
+  /* TOAST */
+  .thankyou-popup {
+    right: 10px;
+    left: 10px;
+    width: auto;
+    text-align: center;
+  }
+}
+
+
+/* =========================
+   EXTRA SMALL DEVICES (≤480px)
+   ========================= */
+@media (max-width: 480px) {
+
+  .navbar {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .hero h1 {
+    font-size: 1.6rem;
+  }
+
+  section h2 {
+    font-size: 1.4rem;
+  }
+
+  .menu-section h3 {
+    font-size: 1.1rem;
+  }
+
+  .cart-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .remove-btn {
+    margin-top: 5px;
   }
 }
